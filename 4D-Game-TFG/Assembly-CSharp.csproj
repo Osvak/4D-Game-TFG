@@ -56,7 +56,18 @@
     <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\4D Rendering.cs" />
+    <Compile Include="Assets\Demo\Scripts\PlayerController.cs" />
+    <Compile Include="Assets\Demo\Scripts\RaymarchCam.cs" />
+    <Compile Include="Assets\Demo\Scripts\SceneViewFilter.cs" />
+    <Compile Include="Assets\Demo\Scripts\WSlider.cs" />
+    <Compile Include="Assets\Demo\Scripts\DistanceFunctions.cs" />
+    <Compile Include="Assets\Demo\Scripts\Shape4D.cs" />
+    <Compile Include="Assets\Demo\Scripts\PlayerRayMarchCollider.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Demo\Shaders\DistanceFunctions.cginc" />
+    <None Include="Assets\Demo\Shaders\Toon.shader" />
+    <None Include="Assets\Demo\Shaders\RaymarchCam.shader" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -745,6 +756,12 @@
     </Reference>
     <Reference Include="Unity.EditorCoroutines.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.EditorCoroutines.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Mathematics.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.Mathematics.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Mathematics">
+      <HintPath>Library\ScriptAssemblies\Unity.Mathematics.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
