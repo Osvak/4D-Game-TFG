@@ -424,20 +424,24 @@ PrefabInstance:
       value: Basic4DShape
       objectReference: {fileID: 0}
     - target: {fileID: 7220340402648136979, guid: 574545eca55884a07aeff49f3d3ef266, type: 3}
+      propertyPath: scaleW
+      value: 11.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 7220340402648136979, guid: 574545eca55884a07aeff49f3d3ef266, type: 3}
       propertyPath: operation
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7220340402648136979, guid: 574545eca55884a07aeff49f3d3ef266, type: 3}
       propertyPath: positionW
-      value: 1.19
+      value: 0.15
       objectReference: {fileID: 0}
     - target: {fileID: 7220340402648136979, guid: 574545eca55884a07aeff49f3d3ef266, type: 3}
       propertyPath: rotationW.x
-      value: 108.1
+      value: 173.42
       objectReference: {fileID: 0}
     - target: {fileID: 7220340402648136979, guid: 574545eca55884a07aeff49f3d3ef266, type: 3}
       propertyPath: rotationW.y
-      value: 0
+      value: 182.2
       objectReference: {fileID: 0}
     - target: {fileID: 7220340402648136979, guid: 574545eca55884a07aeff49f3d3ef266, type: 3}
       propertyPath: rotationW.z
@@ -1594,13 +1598,13 @@ MonoBehaviour:
   _renderNr: 5
   orderedShapes:
   - {fileID: 558705722}
-  - {fileID: 2029557984}
   - {fileID: 1190784652}
   - {fileID: 202086727}
   - {fileID: 607042104}
   - {fileID: 2098674460}
   - {fileID: 1558548453}
   - {fileID: 1928786418}
+  - {fileID: 2029557984}
 --- !u!1 &4569217395571772964
 GameObject:
   m_ObjectHideFlags: 0
