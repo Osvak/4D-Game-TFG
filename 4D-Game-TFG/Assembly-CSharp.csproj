@@ -61,10 +61,10 @@
     <Compile Include="Assets\Demo\Scripts\WSlider.cs" />
     <Compile Include="Assets\Demo\Scripts\RaymarchCam.cs" />
     <Compile Include="Assets\Demo\Scripts\SceneViewFilter.cs" />
+    <Compile Include="Assets\GoalScript.cs" />
     <Compile Include="Assets\Scripts\MainMenu.cs" />
     <Compile Include="Assets\Demo\Scripts\Shape4D.cs" />
     <Compile Include="Assets\Demo\Scripts\PlayerRayMarchCollider.cs" />
-    <Compile Include="Assets\GoalScript.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
