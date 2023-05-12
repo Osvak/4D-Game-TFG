@@ -354,7 +354,8 @@
 "Assets/Demo/Scripts/SceneViewFilter.cs"
 "Assets/Demo/Scripts/Shape4D.cs"
 "Assets/Demo/Scripts/WSlider.cs"
-"Assets/MainMenu.cs"
+"Assets/GoalScript.cs"
+"Assets/Scripts/MainMenu.cs"
 -langversion:9.0
 
 /deterministic
