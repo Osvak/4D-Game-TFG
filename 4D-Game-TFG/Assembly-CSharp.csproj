@@ -65,6 +65,7 @@
     <Compile Include="Assets\Scripts\MainMenu.cs" />
     <Compile Include="Assets\Demo\Scripts\Shape4D.cs" />
     <Compile Include="Assets\Demo\Scripts\PlayerRayMarchCollider.cs" />
+    <Compile Include="Assets\Scripts\CameraFollow.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

@@ -34,15 +34,28 @@ public class PlayerController : MonoBehaviour
 
     void MovePlayer()
     {
-
         if (Input.GetAxis("Horizontal") != 0 || Input.GetAxis("Vertical") != 0)
         {
-            Vector3 direction = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical")).normalized;
-            transform.Translate(direction * Time.deltaTime * playerSpeed, Space.World);
-            transform.LookAt(direction + transform.position);
+            Vector3 cameraForward = Camera.main.transform.forward;
+            Vector3 cameraRight = Camera.main.transform.right;
+
+            cameraForward.y = 0f;
+            cameraRight.y = 0f;
+
+            cameraForward.Normalize();
+            cameraRight.Normalize();
+
+            Vector3 movementDirection = (cameraForward * Input.GetAxis("Vertical") + cameraRight * Input.GetAxis("Horizontal")).normalized;
+
+            transform.Translate(movementDirection * Time.deltaTime * playerSpeed, Space.World);
+
+            if (movementDirection != Vector3.zero)
+            {
+                transform.rotation = Quaternion.LookRotation(movementDirection);
+            }
         }
-        
     }
+
 
     public void EndGame()
     {
