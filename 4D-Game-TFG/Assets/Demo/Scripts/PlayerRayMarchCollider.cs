@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using static Unity.Mathematics.math;
 
 // ****************** Player Collision Detection through Raymarching ****************** 
@@ -20,12 +21,16 @@ namespace Unity.Mathematics
         private DistanceFunctions Df;
         private RaymarchCam camScript;
 
+        public GameObject goal;
+        public float distanceGoal;
+
 
         // Start is called before the first frame update
         void Start()
         {
             camScript = Camera.main.GetComponent<RaymarchCam>();
             Df = GetComponent<DistanceFunctions>();
+            goal = GameObject.Find("Goal");
         }
         
         // Update is called once per frame
@@ -33,6 +38,7 @@ namespace Unity.Mathematics
         {
             MoveToGround();
             RayMarch(rayMarchTransforms);
+            GoalReached();
             
         }
         // the distancefunction for the shapes
@@ -137,6 +143,7 @@ namespace Unity.Mathematics
                     nrHits++;
                     //collision
                     transform.Translate(ro[i].forward * d * 1.5f, Space.World);
+                    Debug.Log(ro[i].name);
 
                 }
 
@@ -156,6 +163,18 @@ namespace Unity.Mathematics
             transform.Translate(Vector3.down * d, Space.World);
         }
 
+        void GoalReached()
+        {
+            distanceGoal = Vector3.Distance(this.gameObject.transform.position, goal.transform.position);
+            Debug.DrawLine(this.gameObject.transform.position, goal.transform.position);
+
+            if (distanceGoal <= 1.8)
+            {
+                Debug.Log("Goal");
+
+                SceneManager.LoadScene(0);
+            }
+        }
     }
 }
 
