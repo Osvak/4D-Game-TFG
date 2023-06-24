@@ -483,6 +483,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7261883309578018624, guid: 75e8c88a198814d6b90327715a1d4018, type: 3}
+      propertyPath: clip
+      value: 
+      objectReference: {fileID: 8300000, guid: f311fec4b8b3c56448951a301129842c, type: 3}
+    - target: {fileID: 7261883309578018624, guid: 75e8c88a198814d6b90327715a1d4018, type: 3}
+      propertyPath: source
+      value: 
+      objectReference: {fileID: 886668385}
     - target: {fileID: 7261883309578018625, guid: 75e8c88a198814d6b90327715a1d4018, type: 3}
       propertyPath: playerSpeed
       value: 7.5

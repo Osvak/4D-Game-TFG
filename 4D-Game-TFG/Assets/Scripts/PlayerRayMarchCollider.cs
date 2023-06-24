@@ -26,6 +26,7 @@ namespace Unity.Mathematics
         public float distanceGoal;
         public AudioSource source;
         public AudioClip clip;
+        private bool hasPlayed;
 
         // Start is called before the first frame update
         void Start()
@@ -177,7 +178,11 @@ namespace Unity.Mathematics
             {
                 Debug.Log("Goal");
 
-                source.PlayOneShot(clip);
+                if (!hasPlayed)
+                {
+                    source.Play();
+                    hasPlayed = true;
+                }
 
                 isGoalReached = true;
                 StartCoroutine(LoadNextSceneDelayed());
@@ -186,7 +191,7 @@ namespace Unity.Mathematics
 
         private IEnumerator LoadNextSceneDelayed()
         {
-            yield return new WaitForSeconds(clip.length);
+            yield return new WaitForSeconds(clip.length + 1f);
 
             if (isGoalReached)
             {
@@ -195,6 +200,7 @@ namespace Unity.Mathematics
                 if (nextScene >= SceneManager.sceneCountInBuildSettings)
                 {
                     nextScene = 0;
+                    Destroy(GameObject.Find("MusicManager"));
                 }
 
                 SceneManager.LoadScene(nextScene);

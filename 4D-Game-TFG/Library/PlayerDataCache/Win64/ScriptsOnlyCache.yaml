@@ -80,6 +80,15 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Toggle/ToggleEvent
   methodsToPreserve:
   - assembly: Assembly-CSharp
+    fullTypeName: ButtonScript
+    methodName: HoverSound
+  - assembly: Assembly-CSharp
+    fullTypeName: ButtonScript
+    methodName: PressedSound
+  - assembly: Assembly-CSharp
+    fullTypeName: MainMenu
+    methodName: PlayGame
+  - assembly: Assembly-CSharp
     fullTypeName: MainMenu
     methodName: QuitGame
   - assembly: Assembly-CSharp

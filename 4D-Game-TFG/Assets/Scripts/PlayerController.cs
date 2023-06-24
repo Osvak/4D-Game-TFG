@@ -60,6 +60,7 @@ public class PlayerController : MonoBehaviour
 
     public void EndGame()
     {
+        Destroy(GameObject.Find("MusicManager"));
         SceneManager.LoadScene(0);
     }
 

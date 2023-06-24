@@ -6,7 +6,6 @@ public class MusicScript : MonoBehaviour
 {
     void Start()
     {
-        DontDestroyOnLoad(this);
+        DontDestroyOnLoad(gameObject);
     }
-
 }

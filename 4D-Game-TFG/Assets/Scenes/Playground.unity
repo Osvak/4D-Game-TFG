@@ -133,7 +133,7 @@ PrefabInstance:
     - target: {fileID: 7261883309578018624, guid: 75e8c88a198814d6b90327715a1d4018, type: 3}
       propertyPath: clip
       value: 
-      objectReference: {fileID: 8300000, guid: f311fec4b8b3c56448951a301129842c, type: 3}
+      objectReference: {fileID: 8300000, guid: dc80c37b53839444e98d294a981fe2e8, type: 3}
     - target: {fileID: 7261883309578018624, guid: 75e8c88a198814d6b90327715a1d4018, type: 3}
       propertyPath: source
       value: 
