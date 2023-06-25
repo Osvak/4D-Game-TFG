@@ -2708,8 +2708,7 @@ MonoBehaviour:
     Q and E
 
 
-    Mouse click on UI (Click
-    on the screne after changing the slider to avoid bugs)
+    Left click on the slider
 
 '
   m_isRightToLeft: 0
